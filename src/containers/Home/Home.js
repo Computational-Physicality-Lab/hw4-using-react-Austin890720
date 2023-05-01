@@ -6,7 +6,7 @@ import './Home.css';
 const Home = () => {
     return (
         <Container className='Home'>
-            <img className="home" src={banner}/>
+            <img className="home" src={banner} alt=""/>
                 <div className="document">
                     <div className="box">
                         <h1 className="box_title">We don't ship. We're not real.</h1>

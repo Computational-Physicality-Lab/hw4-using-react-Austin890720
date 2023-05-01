@@ -17,7 +17,7 @@ const Tshirts = () => {
                     <div className='shirt_box' key={i}>
                         <Link to={routes.detail}>
                             <button className='shirtImageButton' onClick={() => handleClick(i)}>
-                                <img src={shirt.colors.white.front} className='image' />
+                                <img src={shirt.colors.white.front} className='image' alt=""/>
                             </button>
                         </Link>
                         <div className='name'>{shirt.name}</div>

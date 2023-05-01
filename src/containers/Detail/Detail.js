@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './Detail.css';
 import shirts from '../../shared/shirts'
 import routes from '../../shared/appRoutes';
-import { Link , useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 const Detail = () => {
     const navigate = useNavigate();

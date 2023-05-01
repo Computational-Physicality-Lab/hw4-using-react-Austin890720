@@ -15,6 +15,7 @@ const Cart = () => {
     const handleChange = (i, value) => {
         items[i].Quantity = parseInt(value);
         sessionStorage.setItem('items', JSON.stringify(items));
+        setQ();
         window.location.reload();
     }
     const [quantities, setQ] = useState(items.map(item => item.Quantity));
@@ -36,7 +37,7 @@ const Cart = () => {
                                 {item.Name}
                             </div>
                             <div className='element_left'>
-                                <img src={shirts[item.ShirtNumber].colors[item.ShirtColor].front} className='element_img' />
+                                <img src={shirts[item.ShirtNumber].colors[item.ShirtColor].front} className='element_img' alt={item.name}/>
                             </div>
 
                             <div className='element_right'>
